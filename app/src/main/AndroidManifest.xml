@@ -12,6 +12,15 @@
         android:theme="@style/Theme.APKkomik"
         tools:targetApi="31">
         <activity
+            android:name=".mark"
+            android:exported="false" />
+        <activity
+            android:name=".calender"
+            android:exported="false" />
+        <activity
+            android:name=".Teams"
+            android:exported="false" />
+        <activity
             android:name=".coba"
             android:exported="false" />
         <activity

@@ -5,16 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class ContenActivity : AppCompatActivity() {
+class Teams : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_conten)
+        setContentView(R.layout.activity_teams)
 
-        val btnteam = findViewById<Button>(R.id.btnteam)
-        btnteam.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+        val btnrider = findViewById<Button>(R.id.btnrider)
+        btnrider.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

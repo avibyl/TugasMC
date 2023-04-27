@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/greybg"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
-        android:layout_height="809dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-35dp"
-        android:layout_marginTop="-22dp"
-        android:layout_marginBottom="-55dp"
-        app:srcCompat="@drawable/gojobg" />
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Sudah Punya Akun ?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="325dp"
+        android:layout_height="341dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
 
     <TextView
         android:id="@+id/kregister"
@@ -25,50 +40,57 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
         android:text="REGISTER"
         android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <EditText
         android:id="@+id/remail"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_width="202dp"
+        android:layout_height="61dp"
         android:layout_below="@id/kregister"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="65dp"
         android:background="#303134"
         android:drawableStart="@drawable/baseline_email_24"
         android:drawablePadding="20dp"
         android:hint="Email"
         android:padding="20dp"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
 
     <EditText
         android:id="@+id/rpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_width="206dp"
+        android:layout_height="57dp"
         android:layout_below="@id/kregister"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="20dp"
         android:background="#303134"
         android:drawableStart="@drawable/baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="Password"
         android:padding="20dp"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
 
     <Button
         android:id="@+id/kSingup"
@@ -83,22 +105,30 @@
         android:textColorHighlight="#2196F3"
         android:textColorHint="#673AB7"
         android:textColorLink="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
         app:rippleColor="@color/purple_200" />
 
     <Button
         android:id="@+id/rLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="115dp"
-        android:layout_marginEnd="115dp"
-        android:layout_marginBottom="252dp"
         android:background="@android:drawable/button_onoff_indicator_off"
         android:backgroundTint="@color/teal_200"
         android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
         tools:ignore="TouchTargetSizeCheck" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
