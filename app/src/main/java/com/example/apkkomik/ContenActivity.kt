@@ -24,7 +24,7 @@ class ContenActivity : AppCompatActivity() {
 
         val btnteam = findViewById<Button>(R.id.btnteam)
         btnteam.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, Team::class.java)
             startActivity(intent)
         }
 
@@ -57,7 +57,7 @@ class ContenActivity : AppCompatActivity() {
             "Bike : Ducati\n" +
                     "Date of Birth : 1997-01-14\n" +
                     "Place of Birth : Torino\n" +
-                    "Height : 176 cm | Weight : 67 kg")
+                    "Height : 176 cm | Weight : 67 kg",)
             gpList.add(gp_view)
 
         gp_view = GP(
@@ -65,7 +65,7 @@ class ContenActivity : AppCompatActivity() {
             "",
             "",
             "",
-            "")
+            "",)
             gpList.add(gp_view)
 
         gp_view = GP(

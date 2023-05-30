@@ -9,5 +9,5 @@ data class GP(
     val nama     :String,
     val belakang :String,
     val team     :String,
-    val Deskripsi:String,
+    val Deskripsi:String
 ):Parcelable
