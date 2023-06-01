@@ -14,11 +14,11 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imgTeam"
+            android:id="@+id/imgCalender"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/aprilia" />
+            app:srcCompat="@drawable/australia" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

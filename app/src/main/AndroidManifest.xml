@@ -12,6 +12,9 @@
         android:theme="@style/Theme.APKkomik"
         tools:targetApi="31">
         <activity
+            android:name=".calender"
+            android:exported="false" />
+        <activity
             android:name=".lupapassword"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".DetailRider"
             android:exported="false" />
         <activity
-            android:name=".ContenActivity"
+            android:name=".home"
             android:exported="false" />
         <activity
             android:name=".Register"

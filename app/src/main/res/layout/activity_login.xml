@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgrgp"
     android:orientation="vertical"
-    tools:context=".lupapassword">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:inputType="textPersonName"
-                android:text="Email" />
+                android:hint="Email" />
 
             <EditText
                 android:id="@+id/kpassword"
@@ -56,13 +56,14 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:inputType="textPersonName"
-                android:text="Password" />
+                android:hint="Password" />
 
             <Button
                 android:id="@+id/btnlogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/white"
                 android:backgroundTint="#545B77"
                 android:text="Login" />
 
@@ -84,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:padding="5dp"
+            android:textColor="@color/white"
             android:backgroundTint="#545B77"
             android:text="Register" />
 
